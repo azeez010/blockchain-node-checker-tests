@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>SLA LEVELS</p>
+    <% for(var i=0; i < sla_levels.length; i++) { %>
+        <p><%= sla_levels[i] %></p>
+     <% } %>
+
+     <br>
+     <p>Nodes with SLA</p>
+        
+     <% for(var report in sla_reports) { %>
+        <p><%= report %> - <%= sla_reports[report] %>% Uptime</p>
+     <% } %>
+
+     <br>
+    <p>All supported Nodes</p>
+
+     <% for(var i=0; i < node_urls.length; i++) { %>
+        <p><%= node_urls[i] %></p>
+     <% } %>
+
+</body>
+</html>

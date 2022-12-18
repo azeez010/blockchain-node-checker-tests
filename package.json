@@ -1,0 +1,28 @@
+{
+  "name": "availability-checker",
+  "version": "1.0.0",
+  "main": "auto_reloader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Azeez",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "got": "^12.5.3",
+    "node-cron": "^3.0.2",
+    "node-yaml-config": "^1.0.0",
+    "redis": "^4.5.1",
+    "request": "^2.88.2",
+    "requests": "^0.3.0",
+    "sleep-promise": "^9.1.0",
+    "winston": "^3.8.2",
+    "yaml": "^2.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

@@ -1,0 +1,10 @@
+npm install
+make sure redis is installed and is available AT http//localhost:6379
+
+sh start.sh with bash
+or run
+node checker and node server
+or 
+node checker && node server
+
+nav to http://127.0.0.1:8080/ to view the SLA calculator

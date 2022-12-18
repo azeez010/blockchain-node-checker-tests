@@ -1,0 +1,58 @@
+nodes:
+  ethnodes:
+    urls:
+      -
+        node: https://rpc.ankr.com/eth
+        trusted: true
+      -
+        node: https://rpc.builder0x69.io
+        trusted: false
+    
+    rpc_checks:
+      eth_blockNumber:
+        main: true
+        name: eth_blockNumber
+        
+      lastest_eth_blockNumber:
+        name: eth_blockNumber
+        params:
+          - latest
+          - false
+            
+      eth_getBalance:
+          name: eth_getBalance
+          trusted: true
+          params:
+            - "0x8D97689C9818892B700e27F316cc3E41e17fBeb9"
+            - latest
+      
+      eth_syncing:
+        name: eth_syncing
+      
+    id: 1
+      
+  solnode:
+    urls:
+      - 
+        node: ://api.mainnet-beta.solana.com
+
+    rpc_checks:
+      getBlockTime:
+        main: true
+        name: getBlockTime
+
+    id: 1
+
+sla_level:
+  - 100
+  - 99
+  - 50
+
+
+max_block_behind: 200
+# these values are in seconds
+max_random_seconds: 5
+time_interval: 10
+max_http_timeout: 62
+clear_after_compute: false
+integrity_check: true
